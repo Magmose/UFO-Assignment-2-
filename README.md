@@ -1,1 +1,3 @@
-# UFO-Assignment-2-
+# UFO-Assignment-2
+
+Af Magnus Albeck Klitmose
