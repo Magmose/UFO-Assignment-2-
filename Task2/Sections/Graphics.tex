@@ -1,0 +1,40 @@
+\section{Graphics}
+Page of graphics assigments
+
+\subsection{Caption over image}
+Label: southpark1
+\begin{figure}[H]
+    \centering
+    \caption{Caption over image}
+    \includegraphics[width=10cm]{Pictures/southpark1.jpg}
+    \label{fig:southpark1}
+\end{figure}
+\subsection{Caption under image}
+Label: southpark2
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{Pictures/southpark2.jpg}
+    \caption{Caption under image}
+    \label{fig:southpark2}
+\end{figure}
+\subsection{Two images next to each other}
+Label: doublepicture
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.48\linewidth}        %% or \columnwidth
+        \centering
+        \includegraphics[width=\linewidth]{Pictures/southpark4.jpg}
+        \caption{Picture 2}
+        \label{fig:southpark4_1}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\linewidth}        %% or \columnwidth
+        \centering
+        \includegraphics[width=\linewidth]{Pictures/southpark4.jpg}
+        \caption{Picture 2}
+        \label{fig:southpark4_2}
+    \end{subfigure}
+    \caption{Two images next to each other}
+    \label{fig:doublepicture}
+\end{figure}
+
+

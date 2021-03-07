@@ -1,0 +1,54 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[section]{placeins}
+\usepackage{graphicx,subcaption}
+\usepackage{import}
+\usepackage{float}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{Bib/Bibs.bib}
+
+%Lists
+\usepackage{enumitem}
+
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+\begin{document}
+    \import{Frontpage/}{Titlepage}
+    \pagebreak
+    \tableofcontents
+    %\subfile{Sections/Graphics_Section}
+    \pagebreak
+    \import{Sections/}{Graphics}
+    \pagebreak
+    \import{Sections/}{Reference}
+    \pagebreak
+    \import{Sections/}{Section}
+    \pagebreak
+    \import{Sections/}{Lists}
+    \pagebreak
+    \import{Sections/}{Table}
+    \pagebreak
+    \import{Sections/}{Coding}
+    \pagebreak
+    \import{Sections/}{Math}
+    \pagebreak
+    \import{Sections/}{Bibliography}
+    \pagebreak
+    \import{Sections/}{Todo}
+\end{document}
